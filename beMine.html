@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+
+      img {
+        width: 300px;
+        height: auto;
+        margin-top: 150px;
+      }
+
+      button {
+        -webkit-appearance: none;
+        appearance: none;
+
+        background: #ffffff;
+        border-radius: 90px;
+        height: 40px;
+        border: 2px rgb(255, 73, 73) solid;
+        color: #000;
+        font-size: 20px;
+        box-shadow: 3px 3px 0px rgb(255, 73, 73);
+        transition: 0.3s;
+      }
+
+      button:hover {
+        box-shadow: 5px 5px 0px rgb(255, 73, 73);
+      }
+
+      #left {
+        transform-origin: top center;
+      }
+
+      #ui {
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="ui" width="100%" height="100%">
+      <tbody>
+        <tr>
+          <td align="center" valign="middle">
+            <!-- GIF -->
+            <img
+              id="gif"
+              src="minion-minion-loves.gif"
+              alt="photo"
+            /><br /><br />
+
+            <!-- Text -->
+            <div id="text">Lâm Anh em sẽ đi chơi valentine cùng anh chứ?</div>
+            <br />
+
+            <!-- Buttons -->
+            <button id="left">Có</button>
+            <button id="right">Không</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      const left = document.getElementById("left");
+      const right = document.getElementById("right");
+      const gif = document.getElementById("gif");
+      const text = document.getElementById("text");
+
+      let clicks = 0;
+
+      const scales = [
+        [1.6, 1.6],
+        [2.2, 2.4],
+        [3.0, 3.4],
+        [4.2, 5.4],
+        [6.7, 8.0],
+      ];
+
+      const texts = [
+        "Are you sure?",
+        "Are you sure \nyou're sure?",
+        "You better say yes",
+        "Babe pleaseeee",
+        "Press yes pleaseee",
+      ];
+
+      right.onclick = () => {
+        if (clicks < texts.length) {
+          right.innerText = texts[clicks];
+
+          const s = scales[clicks];
+          left.style.transform = "scale(" + s[0] + "," + s[1] + ")";
+          left.style.position = "relative";
+          left.style.zIndex = 9999;
+
+          clicks++;
+        }
+      };
+
+      left.onclick = () => {
+        gif.src = "fireworks-exploding-heart.gif";
+        text.innerText = "YAAYYY!!!";
+
+        left.style.display = "none";
+        right.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

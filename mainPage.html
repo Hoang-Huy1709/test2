@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat";
+        }
+
+        body{
+            position: relative;
+        }
+             /* Main header */
+        .main-header{
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            padding-top: 15%;
+            background: linear-gradient(to bottom,rgb(0,0,0,0.9),rgb(0,0,0,0.2)),url(/assets/steeping-tea.webp) center/cover;
+        }
+
+        .main-contents{
+            color: white;
+        }
+
+        .main-contents button{
+            width: 100px;
+            height: 30px;
+            background: linear-gradient(to left,rgb(0, 187, 90),rgb(0, 197, 232));
+            color: white;
+            font-weight: bold;
+            border-radius: 90px;
+            border: none;
+            margin: 7px;
+            transition: 0.4s;
+        }
+
+        .main-contents button:hover{
+            width: 120px;
+        }
+
+        /* Features */
+        .features{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .features div{
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            border: 1px rgb(204, 204, 204) solid;
+            transition: 0.3s;
+        }
+
+        .features div:hover{
+            background-color: rgb(213, 255, 213);
+        }
+
+
+        .features h3{
+            letter-spacing: 3px;
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .features p{
+            line-height: 20px;
+            word-spacing: 10px;
+        }
+
+        .title{
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: green;
+        }
+
+        /* About */
+        .about{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .about div:first-child{
+            padding: 5px;
+            background-color: rgb(48, 141, 48);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .about div:last-child{
+            padding: 30px;
+        }
+
+        .about button{
+            width: 100px;
+            height: 30px;
+            background: linear-gradient(to left,rgb(0, 187, 90),rgb(0, 197, 232));
+            color: white;
+            font-weight: bold;
+            border-radius: 90px;
+            border: none;
+            margin: 7px;
+            transition: 0.4s;
+        }
+
+        .about img{
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .about img:hover{
+            transform: scale(1.1,1.1);
+            opacity: 0.8;
+        }
+
+        /* Products */
+        .products{
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            background: linear-gradient(to left,rgb(0, 187, 90),rgb(0, 197, 232));
+        }
+
+        .products div{
+            background: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .products button{
+            width: 100px;
+            height: 30px;
+            background: linear-gradient(to left,rgb(0, 187, 90),rgb(0, 197, 232));
+            color: white;
+            font-weight: bold;
+            border-radius: 90px;
+            border: none;
+            margin: 7px;
+            transition: 0.4s;
+        }
+
+        .products img{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Dich vu */
+        .services{
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .services div{
+            text-align: center;
+            overflow: hidden;
+            background: green;
+            color: white;
+            margin: 10px;
+            border-radius: 20px;
+            border: 5px rgb(0, 129, 49) solid;
+        }
+
+        .services img{
+            width: 100%;
+        }
+
+        .services h3{
+            margin: 15px;
+        }
+
+
+        .services button{
+            margin-bottom: 20px;
+            width: 100px;
+            height: 30px;
+            background: linear-gradient(to left,rgb(0, 187, 90),rgb(0, 197, 232));
+            color: white;
+            font-weight: bold;
+            border-radius: 90px;
+            border: none;
+            transition: 0.4s;
+        }
+
+        /* contact */
+        .contact{
+            border: 4px red solid;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .contact div{
+            border: 4px rgb(43, 53, 255) solid;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- main header -->
+    <div class="main-header">
+        <div class="main-contents">
+            <p>Over hunrred flavors of tea</p>
+            <h2>SPECIALLY CRAFTED TEA</h2>
+            <button>Explore</button>
+        </div>
+    </div>
+
+    <!-- Features -->
+     <h3 class="title">FEATURE</h3>
+     <div class="features">
+        <div>
+            <h3>MADE WITH LOVE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <h3>RELAXTATION</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <h3>Title is here</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <h3>Title is here</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+     </div>  
+
+     <!-- About -->
+      <h3 class="title">ABOUT</h3>
+      <div class="about">
+        <div>
+            <img src="/assets/steeping-tea.webp" alt="">
+        </div>
+        <div>
+            <h3>About our</h3>
+            <h3>Title is here</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorum excepturi praesentium iste eius voluptas recusandae consectetur fuga, sed explicabo, aperiam dicta alias, provident quas. Minus ullam maiores alias optio.</p>
+            <button>Read more</button>
+        </div>
+      </div>
+
+      <!-- Sản phẩm -->
+    <h3 class="title">PRODUCTS</h3>
+    <div class="products">
+        <div>
+            <h5>CHECK OUT</h5>
+            <h3>OUR PRODUCTS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda at exercitationem! Quisquam ratione pariatur eveniet sit esse cum, dolorum consequatur, autem vitae facilis repudiandae ducimus cupiditate est neque rem.</p>
+            <button>Check out</button>
+        </div>
+
+        <div>
+            <img width="100px" src="/assets/steeping-tea.webp" alt="">
+            <h4>Tea</h4>
+            <h5>99$</h5>
+        </div>
+
+        <div>
+            <img width="100px" src="/assets/steeping-tea.webp" alt="">
+            <h4>Tea</h4>
+            <h5>99$</h5>
+        </div>
+    </div>
+
+    <!-- Dich vụ-->
+     <h3 class="title">SERVICES</h3>
+     <div class="services">
+        <div>
+            <img width="150px" src="/assets/steeping-tea.webp" alt="">
+            <h3>DELIVERY</h3>
+            <button>Read more</button>
+        </div>
+        <div>
+            <img width="150px" src="/assets/steeping-tea.webp" alt="">
+            <h3>DELIVERY</h3>
+            <button>Read more</button>
+        </div>
+
+        <div>
+            <img width="150px" src="/assets/steeping-tea.webp" alt="">
+            <h3>DELIVERY</h3>
+            <button>Read more</button>
+        </div> 
+     </div>
+
+     <!-- Thong tin form-->
+     <h3 class="title">Contact us</h3>
+     <div class="contact">
+        <div>
+            <h3>Address</h3>
+            <p>FPT Polytechnic, Quang Thanh, Thanh Hoa</p>
+
+            <h3>Email</h3>
+            <p>Abc123@gmail.com</p>
+
+            <h3>Telephone</h3>
+            <p>+8486973444</p>
+        </div>
+
+        <div>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="message" name="" id=""></textarea>
+            </form>
+        </div>
+     </div>
+
+    
+</body>
+</html>
